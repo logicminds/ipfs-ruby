@@ -10,6 +10,7 @@ module IPFS::Commands
       before :each do
         allow(HTTP).to receive(:get) { response }
         allow(IPFS::Content::Link).to receive(:parse_single) { response }
+        allow(File).to receive(:open).with('myfilename.txt', :binmode=>true)
         allow(File).to receive(:open).with('myfilename.txt', 'rb')
       end
 
