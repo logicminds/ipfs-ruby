@@ -7,7 +7,7 @@
 **Work in progress.**
 
 ## Installation
-Requires Ruby >= 2.1, since it uses the new required keyword arguments syntax.
+Requires Ruby >= 2.4, since it uses the new required keyword arguments syntax.
 
 Add this line to your application's Gemfile:
 
